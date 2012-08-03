@@ -1,6 +1,6 @@
 /*
 
-  jQuery CardDeck-Plugin - 1.0.0
+  jQuery CardDeck-Plugin - 1.0.1
   Author: Thomas Limp (thomas.limp@valiton.com)
   Licence: MIT
 
@@ -206,7 +206,7 @@
         };
 
         var animate = function (steps) {
-            if (!self.running) {
+            if (!self.running && 1 < self.length) {
                 self.running = true;
                 self
                     .$cards
